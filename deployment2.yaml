@@ -21,8 +21,6 @@ spec:
             - /bin/sh
             - -c
             - touch /tmp/healthy; sleep 30; rm -rf /tmp/healthy; sleep 600
-          ports:
-            - containerPort: 8000
           livenessProbe:
             exec:
               command:
